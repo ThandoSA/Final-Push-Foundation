@@ -1,89 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Final Push Foundation</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <title>Contact | Final Push Foundation</title>
 </head>
 <body>
-        <nav>
-    <div class="logo">
-        <a href="index.html">
-            <img src="assets/FPF.png" alt="Final Push Foundation Logo" style="height: 50px; width: auto; display: block;">
-        </a>
-    </div>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="what-we-do.html">What We Do</a>
-        <a href="donors.html">Donors</a>
-        <a href="collaboration.html">Collaborate</a>
-        <a href="contact.html">Contact</a>
-    </div>
-</nav>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html"><img src="assets/FPF.png" alt="Final Push Foundation" class="logo-img"></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="what-we-do.html">What We Do</a>
+                <a href="donors.html">Donate</a>
+                <a href="collaboration.html">Partner</a>
+                <a href="contact.html" class="nav-cta active">Get Involved</a>
+            </div>
+            <button class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
+    <section class="hero" style="padding: 12rem 0 6rem;">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="container" style="text-align: center;">
+            <div class="badge" style="margin: 0 auto 2rem;">
+                <i class="ph-fill ph-chat-circle-dots"></i>
+                <span>Let's Connect</span>
+            </div>
+            <h1 class="hero-title" style="max-width: 800px; margin: 0 auto 2rem;">
+                <span class="handwritten">Get in Touch</span><br>
+                We'd Love to Hear From You
+            </h1>
+            <p class="hero-text" style="max-width: 700px; margin: 0 auto;">
+                Whether you want to donate, volunteer, partner with us, or simply learn more about our work—we're here to connect and explore how we can work together to empower matriculants.
+            </p>
+        </div>
+    </section>
 
-    <section class="fade-in">
-        <div class="container" style="max-width: 600px;">
-            <h2 style="text-align: center; color: var(--navy); margin-bottom: 2rem;">Get In Touch</h2>
-            <form style="display: flex; flex-direction: column; gap: 1.5rem;">
-                <input type="text" placeholder="Full Name" style="padding: 1rem; border: 1px solid #ddd; border-radius: 8px;">
-                <input type="email" placeholder="Email Address" style="padding: 1rem; border: 1px solid #ddd; border-radius: 8px;">
-                <textarea rows="5" placeholder="How would you like to help?" style="padding: 1rem; border: 1px solid #ddd; border-radius: 8px;"></textarea>
-                <button class="btn btn-navy">Send Message</button>
-            </form>
+    <section class="content-section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+                <div style="background: linear-gradient(135deg, var(--green), var(--green-light)); padding: 3rem; border-radius: 25px; color: white; text-align: center;">
+                    <i class="ph-fill ph-envelope-simple" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Email Us</h3>
+                    <a href="mailto:finalpushfoundation@outlook.com" style="color: white; text-decoration: none; font-size: 1rem; word-break: break-word;">finalpushfoundation@outlook.com</a>
+                </div>
 
-            <div style="margin-top: 4rem; text-align: center;">
-                <h3 style="color: var(--navy);">Follow Our Impact</h3>
-                <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; font-size: 2rem;">
-                    <a href="#" style="color: var(--navy);"><i class="ph-fill ph-linkedin-logo"></i></a>
-                    <a href="#" style="color: var(--green);"><i class="ph-fill ph-instagram-logo"></i></a>
+                <div style="background: linear-gradient(135deg, var(--blue), var(--blue-dark)); padding: 3rem; border-radius: 25px; color: white; text-align: center;">
+                    <i class="ph-fill ph-map-pin" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Location</h3>
+                    <p style="font-size: 1rem;">South Africa<br>Serving learners nationwide</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, var(--orange), #FFB84D); padding: 3rem; border-radius: 25px; color: white; text-align: center;">
+                    <i class="ph-fill ph-clock" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Response Time</h3>
+                    <p style="font-size: 1rem;">We typically respond<br>within 24-48 hours</p>
                 </div>
             </div>
         </div>
     </section>
-    <footer style="background: var(--navy); color: white; padding: 4rem 10% 2rem; margin-top: 4rem; border-radius: 40px 40px 0 0;">
-    <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 3rem;">
-            
-            <div style="flex: 1; min-width: 250px;">
-                <div style="background: white; display: inline-block; padding: 5px; border-radius: 8px; margin-bottom: 1.5rem;">
-                    <img src="assets/FPF.png" alt="FPF Logo" style="height: 40px; width: auto;">
+
+    <section class="support">
+        <div class="container support-wrapper">
+            <div class="support-text">
+                <span class="tag">Contact Form</span>
+                <h2>Send Us a<br>Message</h2>
+                <p>Fill out the form and we'll get back to you as soon as possible. Let us know how you'd like to get involved or what questions you have.</p>
+                <div class="features">
+                    <div><i class="ph-fill ph-chat-circle"></i> <span>Quick Response</span></div>
+                    <div><i class="ph-fill ph-user-circle"></i> <span>Personal Touch</span></div>
+                    <div><i class="ph-fill ph-shield-check"></i> <span>Privacy Protected</span></div>
                 </div>
-                <p style="opacity: 0.8; font-size: 0.95rem; line-height: 1.6;">
-                    Providing the meaningful "final push" for South African matriculants to complete their schooling with dignity and readiness.
-                </p>
+                <div style="margin-top: 3rem; padding: 2rem; background: rgba(140, 198, 63, 0.1); border-radius: 20px; border-left: 4px solid var(--green);">
+                    <h4 style="color: var(--navy); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="ph-fill ph-info"></i> Need Immediate Help?
+                    </h4>
+                    <p style="color: var(--gray-600); line-height: 1.7; margin-bottom: 0.5rem;">If you're a learner in crisis or need urgent support, please reach out to:</p>
+                    <p style="color: var(--navy); font-weight: 600;">SADAG (South African Depression & Anxiety Group)</p>
+                    <p style="color: var(--gray-600);">0800 567 567 (toll-free) | Available 8am-8pm</p>
+                </div>
             </div>
-
-            <div style="flex: 1; min-width: 150px;">
-                <h4 style="color: var(--green); margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Navigation</h4>
-                <ul style="list-style: none; line-height: 2.5;">
-                    <li><a href="index.html" style="color: white; text-decoration: none; opacity: 0.8;">Home</a></li>
-                    <li><a href="what-we-do.html" style="color: white; text-decoration: none; opacity: 0.8;">What We Do</a></li>
-                    <li><a href="donors.html" style="color: white; text-decoration: none; opacity: 0.8;">Donors</a></li>
-                    <li><a href="collaboration.html" style="color: white; text-decoration: none; opacity: 0.8;">Collaborate</a></li>
-                </ul>
+            <div class="support-form">
+                <!--REPLACE WITH YOUR GOOGLE FORM EMBED URL-->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-PU9wUOdpAJIMrKvphyieEkmYkEeFoZH8XFpASj6u9UrB5A/viewform?embedded=true" width="640" height="714" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
+        </div>
+    </section>
 
-            <div style="flex: 1; min-width: 200px;">
-                <h4 style="color: var(--green); margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Get in Touch</h4>
-                <p style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                    <i class="ph-bold ph-envelope-simple" style="margin-right: 8px;"></i> finalpushfoundation@outlook.com
-                </p>
-                <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-                    <a href="https://instagram.com/your-handle" target="_blank" style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; transition: 0.3s; text-decoration: none;" onmouseover="this.style.background='var(--green)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
-                        <i class="ph-fill ph-instagram-logo" style="font-size: 1.5rem;"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/your-handle" target="_blank" style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; transition: 0.3s; text-decoration: none;" onmouseover="this.style.background='var(--blue)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
-                        <i class="ph-fill ph-linkedin-logo" style="font-size: 1.5rem;"></i>
-                    </a>
+    <section class="content-section gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">Ways to Connect</span>
+                <h2>Other Ways to Get Involved</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem;">
+                <div style="background: white; padding: 3rem; border-radius: 25px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); text-align: center;">
+                    <i class="ph-fill ph-gift" style="font-size: 3.5rem; color: var(--green); margin-bottom: 1.5rem;"></i>
+                    <h3 style="color: var(--navy); margin-bottom: 1rem;">Make a Donation</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7; margin-bottom: 2rem;">Support learners with financial contributions or in-kind donations of study resources.</p>
+                    <a href="donors.html" class="btn btn-green">Donate Now</a>
+                </div>
+
+                <div style="background: white; padding: 3rem; border-radius: 25px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); text-align: center;">
+                    <i class="ph-fill ph-handshake" style="font-size: 3.5rem; color: var(--blue); margin-bottom: 1.5rem;"></i>
+                    <h3 style="color: var(--navy); margin-bottom: 1rem;">Become a Partner</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7; margin-bottom: 2rem;">Collaborate with us through corporate partnerships or community initiatives.</p>
+                    <a href="collaboration.html" class="btn btn-blue">Partner With Us</a>
+                </div>
+
+                <div style="background: white; padding: 3rem; border-radius: 25px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); text-align: center;">
+                    <i class="ph-fill ph-hand-heart" style="font-size: 3.5rem; color: var(--orange); margin-bottom: 1.5rem;"></i>
+                    <h3 style="color: var(--navy); margin-bottom: 1rem;">Volunteer Your Time</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7; margin-bottom: 2rem;">Share your skills and expertise as a mentor, tutor, or program volunteer.</p>
+                    <a href="#contact-form" class="btn btn-outline" style="border-color: var(--orange); color: var(--orange);">Get Started</a>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 0.85rem; opacity: 0.5;">
-            <p>&copy; 2026 Final Push Foundation.</p>
+    <section class="content-section cream">
+        <div class="container" style="text-align: center;">
+            <span class="tag">Follow Our Journey</span>
+            <h2 style="color: var(--navy); font-size: 2.5rem; margin: 1rem 0 2rem;">Stay Connected on Social Media</h2>
+            <p style="color: var(--gray-600); font-size: 1.1rem; max-width: 600px; margin: 0 auto 3rem;">Follow us for updates, success stories, and ways to get involved in supporting South African matriculants.</p>
+            <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+                <a href="#" style="width: 100px; height: 100px; background: linear-gradient(135deg, #E1306C, #C13584); border-radius: 25px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px) rotate(5deg)'" onmouseout="this.style.transform='translateY(0) rotate(0)'">
+                    <i class="ph-fill ph-instagram-logo" style="font-size: 3rem; margin-bottom: 0.5rem;"></i>
+                    <span style="font-size: 0.85rem; font-weight: 600;">Instagram</span>
+                </a>
+                <a href="#" style="width: 100px; height: 100px; background: linear-gradient(135deg, #0077B5, #005582); border-radius: 25px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px) rotate(-5deg)'" onmouseout="this.style.transform='translateY(0) rotate(0)'">
+                    <i class="ph-fill ph-linkedin-logo" style="font-size: 3rem; margin-bottom: 0.5rem;"></i>
+                    <span style="font-size: 0.85rem; font-weight: 600;">LinkedIn</span>
+                </a>
+                <!--<a href="#" style="width: 100px; height: 100px; background: linear-gradient(135deg, #1877F2, #0F5DBE); border-radius: 25px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px) rotate(5deg)'" onmouseout="this.style.transform='translateY(0) rotate(0)'">
+                    <i class="ph-fill ph-facebook-logo" style="font-size: 3rem; margin-bottom: 0.5rem;"></i>
+                    <span style="font-size: 0.85rem; font-weight: 600;">Facebook</span>
+                </a>-->
+            </div>
         </div>
-    </div>
-</footer>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-wave"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <img src="assets/FPF.png" alt="FPF" class="footer-logo">
+                    <p>Providing the meaningful "final push" for South African matriculants to complete their education with dignity, resilience, and hope for the future.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="what-we-do.html">What We Do</a></li>
+                            <li><a href="donors.html">Donate</a></li>
+                            <li><a href="collaboration.html">Partner</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Get in Touch</h4>
+                        <p><i class="ph-bold ph-envelope-simple"></i> finalpushfoundation@outlook.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Final Push Foundation. Built with <i class="ph-fill ph-heart"></i> for SA learners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

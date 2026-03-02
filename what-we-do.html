@@ -3,114 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>What We Do | Final Push Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="index.html">
-                <img src="assets/FPF.png" alt="Final Push Foundation Logo" style="height: 50px; width: auto; display: block;">
-            </a>
-        </div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="what-we-do.html">What We Do</a>
-            <a href="donors.html">Donors</a>
-            <a href="collaboration.html">Collaborate</a>
-            <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html"><img src="assets/FPF.png" alt="Final Push Foundation" class="logo-img"></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="what-we-do.html" class="active">What We Do</a>
+                <a href="donors.html">Donate</a>
+                <a href="collaboration.html">Partner</a>
+                <a href="contact.html" class="nav-cta">Get Involved</a>
+            </div>
+            <button class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <header class="fade-in" style="padding: 10rem 10% 4rem; background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);">
-        <div class="container">
-            <h1 style="font-size: 3rem; color: var(--navy); margin-bottom: 1.5rem;">Our Impact & Interventions</h1>
-            <p style="max-width: 800px; color: #475569; font-size: 1.2rem; line-height: 1.8;">
-                We provide a meaningful <strong>“final push”</strong> by addressing both visible and invisible barriers. Our programs are designed to ensure learners are not only able to write their exams, but are supported to transition successfully into what comes next.
+    <section class="hero" style="padding: 12rem 0 6rem;">
+        <div class="blob blob-1"></div>
+        <div class="container" style="text-align: center;">
+            <div class="badge" style="margin: 0 auto 2rem;">
+                <i class="ph-fill ph-hand-heart"></i>
+                <span>Our Programs & Impact</span>
+            </div>
+            <h1 class="hero-title" style="max-width: 800px; margin: 0 auto 2rem;">
+                Making a <span class="handwritten">Real Difference</span><br>
+                in Learners' Lives
+            </h1>
+            <p class="hero-text" style="max-width: 700px; margin: 0 auto;">
+                We provide a meaningful "final push" by addressing both visible and invisible barriers. Our programs are designed to ensure learners are not only able to write their exams, but are supported to transition successfully into what comes next.
             </p>
         </div>
-    </header>
+    </section>
 
-    <section style="background: white;">
+    <section class="content-section">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
-                
-                <div style="padding: 2rem; border-bottom: 5px solid var(--green);">
-                    <i class="ph-bold ph-book-open-text" style="font-size: 2.5rem; color: var(--green);"></i>
-                    <h3 style="color: var(--navy); margin: 1.5rem 0;">Academic Guidance</h3>
-                    <p style="color: #64748b;">We provide practical resources and study guides tailored for the South African matric curriculum, helping students navigate the academic pressure of final examinations.</p>
+            <div class="section-header left">
+                <span class="tag">Our Approach</span>
+                <h2>Four Pillars of Support</h2>
+                <p>We address the real challenges facing matriculants through comprehensive, learner-centred programs.</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-icon" style="background: var(--green); color: white; width: 70px; height: 70px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 1.5rem;">
+                        <i class="ph-fill ph-book-open-text"></i>
+                    </div>
+                    <h3>Academic Guidance</h3>
+                    <p>We provide practical resources and study guides tailored for the South African matric curriculum, helping students navigate the academic pressure of final examinations.</p>
+                    <ul>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Past exam papers & memo guides</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Subject-specific study materials</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>One-on-one tutoring sessions</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Exam preparation workshops</span></li>
+                    </ul>
                 </div>
 
-                <div style="padding: 2rem; border-bottom: 5px solid var(--blue);">
-                    <i class="ph-bold ph-heartbeat" style="font-size: 2.5rem; color: var(--blue);"></i>
-                    <h3 style="color: var(--navy); margin: 1.5rem 0;">Emotional Wellbeing</h3>
-                    <p style="color: #64748b;">Matric is stressful. We offer support structures to manage the mental and emotional toll, building the resilience needed to complete schooling with confidence.</p>
+                <div class="content-card">
+                    <div class="card-icon" style="background: var(--blue); color: white; width: 70px; height: 70px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 1.5rem;">
+                        <i class="ph-fill ph-heartbeat"></i>
+                    </div>
+                    <h3>Emotional Wellbeing</h3>
+                    <p>Matric is stressful. We offer support structures to manage the mental and emotional toll, building the resilience needed to complete schooling with confidence.</p>
+                    <ul>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Mental health counseling</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Stress management workshops</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Peer support groups</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Crisis intervention support</span></li>
+                    </ul>
                 </div>
 
-                <div style="padding: 2rem; border-bottom: 5px solid #F7941E;">
-                    <i class="ph-bold ph-compass" style="font-size: 2.5rem; color: #F7941E;"></i>
-                    <h3 style="color: var(--navy); margin: 1.5rem 0;">Post-School Readiness</h3>
-                    <p style="color: #64748b;">Beyond the exam room, we guide learners toward tertiary education, vocational training, or meaningful employment opportunities.</p>
+                <div class="content-card">
+                    <div class="card-icon" style="background: var(--orange); color: white; width: 70px; height: 70px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 1.5rem;">
+                        <i class="ph-fill ph-users-three"></i>
+                    </div>
+                    <h3>Mentorship Program</h3>
+                    <p>Learners are matched with caring mentors who provide guidance, encouragement, and real-world insights into life after matric.</p>
+                    <ul>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>One-on-one mentor matching</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Career guidance & planning</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Life skills development</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Goal setting & accountability</span></li>
+                    </ul>
                 </div>
 
+               <!---<div class="content-card">
+                    <div class="card-icon" style="background: var(--purple); color: white; width: 70px; height: 70px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 1.5rem;">
+                        <i class="ph-fill ph-compass"></i>
+                    </div>
+                    <h3>Post-School Readiness</h3>
+                    <p>Beyond the exam room, we guide learners toward tertiary education, vocational training, or meaningful employment opportunities.</p>
+                    <ul>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>University application support</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Bursary & scholarship guidance</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Career exploration workshops</span></li>
+                        <li><i class="ph-fill ph-check-circle"></i> <span>Job readiness training</span></li>
+                    </ul>
+                </div>-->
             </div>
         </div>
     </section>
 
-    <section style="background: var(--slate); border-radius: 50px 50px 0 0;">
+    <section class="content-section gray">
         <div class="container">
-            <div style="background: white; padding: 4rem; border-radius: 3rem; box-shadow: 0 20px 40px rgba(0,0,0,0.03);">
-                <h2 style="color: var(--navy); margin-bottom: 2rem; text-align: center;">Closing the Opportunity Gap</h2>
-                <p style="color: #475569; text-align: center; max-width: 900px; margin: 0 auto; line-height: 2;">
-                    Final Push Foundation exists because of the growing gap between pass rates and real-world challenges. We prioritize learners from under-resourced communities, responding to real needs—not assumptions—to ensure every student completes matric with <strong>dignity and hope.</strong>
-                </p>
+            <div class="section-header">
+                <span class="tag">Why We Exist</span>
+                <h2>Closing the Opportunity Gap</h2>
+                <p style="max-width: 800px; margin: 0 auto;">Final Push Foundation exists because of the growing gap between pass rates and real-world challenges. We prioritize learners from under-resourced communities, responding to real needs—not assumptions—to ensure every student completes matric with dignity and hope.</p>
+            </div>
+            <div style="background: white; padding: 4rem; border-radius: 30px; max-width: 900px; margin: 3rem auto; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);">
+                <h3 style="color: var(--navy); font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">The Barriers We Address</h3>
+                <div style="display: grid; gap: 1.5rem;">
+                    <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; background: #F0FDF4; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="ph-fill ph-pencil" style="color: var(--green); font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Lack of Basic Resources</h4>
+                            <p style="color: var(--gray-600); line-height: 1.7;">Many learners lack pens, calculators, textbooks, and other essential study materials.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; background: #EFF6FF; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="ph-fill ph-chalkboard-teacher" style="color: var(--blue); font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Limited Academic Support</h4>
+                            <p style="color: var(--gray-600); line-height: 1.7;">Access to tutoring, study groups, and academic guidance is often unavailable in under-resourced communities.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; background: #FFF7ED; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="ph-fill ph-brain" style="color: var(--orange); font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Emotional & Mental Stress</h4>
+                            <p style="color: var(--gray-600); line-height: 1.7;">The pressure of matric, combined with personal challenges, creates significant emotional burden.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; background: #F5F3FF; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="ph-fill ph-signpost" style="color: var(--purple); font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Uncertainty About the Future</h4>
+                            <p style="color: var(--gray-600); line-height: 1.7;">Many learners lack guidance on post-school pathways, bursaries, and career opportunities.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <footer style="background: var(--navy); color: white; padding: 4rem 10% 2rem; margin-top: 4rem; border-radius: 40px 40px 0 0;">
-    <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 3rem;">
-            
-            <div style="flex: 1; min-width: 250px;">
-                <div style="background: white; display: inline-block; padding: 5px; border-radius: 8px; margin-bottom: 1.5rem;">
-                    <img src="assets/FPF.png" alt="FPF Logo" style="height: 40px; width: auto;">
-                </div>
-                <p style="opacity: 0.8; font-size: 0.95rem; line-height: 1.6;">
-                    Providing the meaningful "final push" for South African matriculants to complete their schooling with dignity and readiness.
-                </p>
-            </div>
 
-            <div style="flex: 1; min-width: 150px;">
-                <h4 style="color: var(--green); margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Navigation</h4>
-                <ul style="list-style: none; line-height: 2.5;">
-                    <li><a href="index.html" style="color: white; text-decoration: none; opacity: 0.8;">Home</a></li>
-                    <li><a href="what-we-do.html" style="color: white; text-decoration: none; opacity: 0.8;">What We Do</a></li>
-                    <li><a href="donors.html" style="color: white; text-decoration: none; opacity: 0.8;">Donors</a></li>
-                    <li><a href="collaboration.html" style="color: white; text-decoration: none; opacity: 0.8;">Collaborate</a></li>
-                </ul>
-            </div>
-
-            <div style="flex: 1; min-width: 200px;">
-                <h4 style="color: var(--green); margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Get in Touch</h4>
-                <p style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                    <i class="ph-bold ph-envelope-simple" style="margin-right: 8px;"></i> finalpushfoundation@outlook.com
-                </p>
-                <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-                    <a href="https://instagram.com/your-handle" target="_blank" style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; transition: 0.3s; text-decoration: none;" onmouseover="this.style.background='var(--green)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
-                        <i class="ph-fill ph-instagram-logo" style="font-size: 1.5rem;"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/your-handle" target="_blank" style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; transition: 0.3s; text-decoration: none;" onmouseover="this.style.background='var(--blue)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
-                        <i class="ph-fill ph-linkedin-logo" style="font-size: 1.5rem;"></i>
-                    </a>
+    <!--<section class="support" id="support">
+        <div class="container support-wrapper">
+            <div class="support-text">
+                <span class="tag">Get Involved</span>
+                <h2>Support Our<br>Programs</h2>
+                <p>Your contribution helps us provide resources, mentorship, and support to learners who need it most.</p>
+                <div class="features">
+                    <div><i class="ph-fill ph-shield-check"></i> <span>Transparent Operations</span></div>
+                    <div><i class="ph-fill ph-chart-line-up"></i> <span>Measurable Outcomes</span></div>
+                    <div><i class="ph-fill ph-hands-clapping"></i> <span>Direct Impact</span></div>
                 </div>
             </div>
+            <div class="support-form">
+                REPLACE WITH YOUR GOOGLE FORM EMBED URL
+                <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID_HERE/viewform?embedded=true" width="100%" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
         </div>
+    </section>-->
 
-        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 0.85rem; opacity: 0.5;">
-            <p>&copy; 2026 Final Push Foundation.</p>
+    <footer class="footer">
+        <div class="footer-wave"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <img src="assets/FPF.png" alt="FPF" class="footer-logo">
+                    <p>Providing the meaningful "final push" for South African matriculants to complete their education with dignity, resilience, and hope for the future.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="what-we-do.html">What We Do</a></li>
+                            <li><a href="donors.html">Donate</a></li>
+                            <li><a href="collaboration.html">Partner</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Get in Touch</h4>
+                        <p><i class="ph-bold ph-envelope-simple"></i> finalpushfoundation@outlook.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Final Push Foundation. Built with <i class="ph-fill ph-heart"></i> for SA learners.</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
