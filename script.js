@@ -84,3 +84,17 @@ window.addEventListener('load', () => {
 });
 
 console.log('Final Push Foundation - Website Loaded Successfully! 🌟');
+
+// Study Box Progress Tracker
+    let currentBoxes = 0;   // Update manually as donations come in
+    let goalBoxes = 100;
+
+    function updateBoxTracker() {
+        let percentage = (currentBoxes / goalBoxes) * 100;
+
+        document.getElementById("boxCount").innerText = currentBoxes;
+        document.getElementById("boxGoal").innerText = goalBoxes;
+        document.getElementById("boxProgress").style.width = percentage + "%";
+    }
+
+ updateBoxTracker();

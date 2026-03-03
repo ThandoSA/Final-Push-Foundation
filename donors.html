@@ -39,7 +39,7 @@
                 Your Support <span class="handwritten">Changes Lives</span>
             </h1>
             <p class="hero-text" style="max-width: 700px; margin: 0 auto;">
-                Every donation, no matter the size, helps provide essential resources and support to matriculants who need it most. Small tools make a massive difference in the hands of a determined learner.
+                Every donation strengthens our structured academic support programme by expanding access to accountability systems, exam preparation tools, and performance tracking for matric learners who need consistent support.
             </p>
         </div>
     </section>
@@ -55,25 +55,106 @@
                 <div class="impact-card green">
                     <div class="card-icon"><i class="ph-fill ph-pencil"></i></div>
                     <h3>Stationery</h3>
-                    <p>Pens, pencils, highlighters, erasers, rulers, and scientific calculators that are essential for daily learning and exam preparation.</p>
+                    <p>Essential academic tools that reduce financial pressure on learners and support consistent preparation throughout the matric year.</p>
                 </div>
                 <div class="impact-card blue">
                     <div class="card-icon"><i class="ph-fill ph-notebook"></i></div>
                     <h3>Paper & Books</h3>
-                    <p>Exam pads, notebooks, textbooks, and organized file folders to help learners stay organized and prepared.</p>
+                    <p>Learning materials that support structured study planning and organised exam preparation.</p>
                 </div>
                 <div class="impact-card orange">
                     <div class="card-icon"><i class="ph-fill ph-book-open"></i></div>
                     <h3>Study Materials</h3>
-                    <p>Previous year notes, past exam papers, summary guides, and subject-specific study resources.</p>
+                    <p>Structured practice materials and exam resources that reinforce classroom learning and build confidence before final examinations.</p>
                 </div>
                 <div class="impact-card purple">
                     <div class="card-icon"><i class="ph-fill ph-backpack"></i></div>
                     <h3>School Essentials</h3>
-                    <p>School bags, lunchboxes, water bottles, and other essentials that help learners focus on their studies.</p>
+                    <p>Basic essentials that remove practical barriers so learners can focus on academic performance.</p>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- ================= STUDY BOX PILOT ================= -->
+    <section class="content-section gray">
+       <div class="container">
+
+        <div class="section-header">
+            <span class="tag">Study Box Initiative</span>
+            <h2>September Study Box</h2>
+            <p>
+                A once-per-year initiative designed to equip matric learners with essential exam preparation tools.
+            </p>
+        </div>
+
+        <div class="cards-grid">
+
+            <div class="impact-card green">
+                <div class="card-icon">
+                    <i class="ph-fill ph-package"></i>
+                </div>
+                <h3>What It Includes</h3>
+                <p style="font-size:0.95rem;">
+                    Exam pads • Sticky notes • Highlighters • Pens & pencils • Rulers • Erasers • Healthy snacks
+                </p>
+            </div>
+
+            <div class="impact-card blue">
+                <div class="card-icon">
+                    <i class="ph-fill ph-tag"></i>
+                </div>
+                <h3>Fixed Contribution</h3>
+                <p>
+                    Each study box is sponsored at <strong>R300 per learner</strong>.
+                    Transparent. Simple. Direct impact.
+                </p>
+            </div>
+
+            <div class="impact-card orange">
+                <div class="card-icon">
+                    <i class="ph-fill ph-hand-heart"></i>
+                </div>
+                <h3>Sponsor a Learner</h3>
+                <p>
+                    Your contribution sponsors one complete study box for a matric learner in our pilot programme.
+                </p>
+
+                <a href="#donate-form" class="btn btn-green" style="margin-top:1.2rem;">
+                    Sponsor Now
+                </a>
+            </div>
+
+            <div class="impact-card purple">
+                <div class="card-icon">
+                    <i class="ph-fill ph-chart-bar"></i>
+                </div>
+
+                <h3>Live Progress</h3>
+
+                <p>
+                    Boxes Sponsored:
+                </p>
+
+                <p style="font-weight:700; font-size:1.4rem; margin-top:0.5rem;">
+                    <span id="boxCount">0</span> /
+                    <span id="boxGoal">100</span>
+                </p>
+
+                <div style="background:#E5E7EB; height:15px; border-radius:50px; margin-top:1rem;">
+                    <div id="boxProgress"
+                         style="height:100%;
+                         width:0%;
+                         border-radius:50px;
+                         background:linear-gradient(90deg,var(--green),var(--green-light));">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+       </div>
     </section>
 
     <section class="content-section gray">
@@ -90,7 +171,7 @@
                         </div>
                         <div>
                             <h3 style="color: var(--navy); margin-bottom: 0.5rem;">Direct Learner Support</h3>
-                            <p style="color: var(--gray-600); line-height: 1.7;">Study materials, stationery, tutoring sessions, and resources that go directly into learners' hands.</p>
+                            <p style="color: var(--gray-600); line-height: 1.7;">Structured programme tools, academic materials, and accountability support systems that directly benefit enrolled learners.</p>
                         </div>
                     </div>
                     <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
@@ -99,7 +180,7 @@
                         </div>
                         <div>
                             <h3 style="color: var(--navy); margin-bottom: 0.5rem;">Program Development</h3>
-                            <p style="color: var(--gray-600); line-height: 1.7;">Mentorship programs, emotional wellbeing support, and post-school readiness initiatives.</p>
+                            <p style="color: var(--gray-600); line-height: 1.7;">Programme improvement, system development, and expansion of structured academic support initiatives.</p>
                         </div>
                     </div>
                     <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
@@ -115,25 +196,6 @@
             </div>
         </div>
     </section>
-
-    <!--<section class="support" id="donate">
-        <div class="container support-wrapper">
-            <div class="support-text">
-                <span class="tag">Donate Now</span>
-                <h2>Make Your<br>Contribution</h2>
-                <p>Fill out the form to let us know how you'd like to support learners. We'll get back to you with donation details and options.</p>
-                <div class="features">
-                    <div><i class="ph-fill ph-shield-check"></i> <span>100% Secure</span></div>
-                    <div><i class="ph-fill ph-receipt"></i> <span>Tax Deductible</span></div>
-                    <div><i class="ph-fill ph-certificate"></i> <span>Donation Certificate</span></div>
-                </div>
-            </div>
-            <div class="support-form">
-                REPLACE WITH YOUR GOOGLE FORM EMBED URL
-                <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID_HERE/viewform?embedded=true" width="100%" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
-        </div>
-    </section>-->
 
     <section class="content-section cream">
         <div class="container" style="text-align: center;">
@@ -167,7 +229,7 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <img src="assets/FPF.png" alt="FPF" class="footer-logo">
-                    <p>Providing the meaningful "final push" for South African matriculants to complete their education with dignity, resilience, and hope for the future.</p>
+                    <p>Providing structured academic support and accountability systems that help South African matric learners finish strong and maximise their final examination performance.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
